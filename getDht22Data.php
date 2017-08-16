@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+include "../../db/db.php";
 include "JSdate.php";
 $sel = "SELECT * FROM `dht22` WHERE datetime >= DATE_SUB(NOW(),INTERVAL 12 HOUR);";
 $sel_run = mysqli_query($conn,$sel);

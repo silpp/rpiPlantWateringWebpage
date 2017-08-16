@@ -1,6 +1,8 @@
 <?php
     include "../../db/db.php";
-    include "JSdate.php"
+    include "JSdate.php";
+    define('TIMEZONE', 'Asia/Bangkok');
+    date_default_timezone_set(TIMEZONE);
 ?>
 <html>
 

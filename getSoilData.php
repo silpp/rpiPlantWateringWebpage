@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+include "../../db/db.php";
 include "JSdate.php";
 $sel = "SELECT * FROM `soil_moisture` WHERE datetime >= DATE_SUB(NOW(),INTERVAL 12 HOUR);";
 $sel_run = mysqli_query($conn,$sel);
